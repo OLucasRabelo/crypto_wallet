@@ -1,13 +1,8 @@
-<h1>Seja BEM-VINDO!</h1>
-<p>O idioma usado nessa aplicação é: <strong><%= locale%> </strong></p>
+<div class="jumbotron">
+  <h1 class="display-4"><%= t('welcome')%></h1>
+  <p class="lead"><%= t('messages.welcome')%></p>
+  <hr class="my-4">
+  <p><%= t('messages.menu')%></p>
+  <%= render "menu"%>
+</div>
 
-<p><strong>Data:</strong> <%=l(Date.today)%></p>
-<p><%= t('hello')%></p>
-
-<%= render "menu"%>
-
-<p> Você está em ambiente de: <strong> <%=ambiente_rails%> </strong></p>
-
-<p>Eu sou uma variavel de instancia/sessão: <strong><%=@meu_nome%></p></strong>
-
-<p>Esse é meu curso de:  <strong><%=@curso%></p></strong>
